@@ -1,0 +1,60 @@
+
+
+.container{
+  color: #fff;
+  display: grid;
+  grid-template-rows: 30% 50% 20%;
+  height:100%;
+  max-width: 600px;
+
+}
+.welcome{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: var(--ion-color-primary);
+}
+
+.inputs{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 4rem;
+
+  input{
+    margin-top: 1rem;
+    padding:1rem;
+    height: 49px;
+    border-radius: 20px;
+    width: 90%;
+    border: .5px solid #B8B8B8;
+    outline: none;
+    color:#B8B8B8;
+  }
+  .esqueceu-a-senha{
+    display: flex;
+    justify-content: end;
+    color: #A0A0A0;
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  button{
+    color: #fff;
+    width: 90%;
+    height: 49px;
+    border-radius: 20px;
+    background: var(--ion-color-primary);
+    font-size: 16px;
+  }
+
+}
+
+
