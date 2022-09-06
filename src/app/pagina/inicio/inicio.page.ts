@@ -10,24 +10,9 @@ import { NavController, ToastController } from '@ionic/angular';
 export class InicioPage implements OnInit {
 
   constructor(public toastWarn: ToastController) {
-    this.verificaUsuarioLogado()
+
 
   }
-
-  verificaUsuarioLogado(){
-    const logado = localStorage.getItem('logado')
-    if(!logado){
-      alert('Por favor realizar login')
-    } else {
-
-      const dados = JSON.parse(logado)
-      let nome = dados.valEmail
-      this.presentToast(nome)
-
-    }
-
-  }
-
   async presentToast(nome) {
     const toast = await this.toastWarn.create({
       message: `Seja bem-vindo ${nome}`,
